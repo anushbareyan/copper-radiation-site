@@ -1,6 +1,6 @@
-import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
-import './Footer.css';
+import React from "react";
+import { Container, Row, Col } from "react-bootstrap";
+import "./Footer.css";
 
 const Footer = () => {
   return (
@@ -8,7 +8,9 @@ const Footer = () => {
       <Container>
         <Row>
           <Col className="text-center">
-            <p className="footer-text">© {new Date().getFullYear()} Anush Bareyan. All rights reserved.</p>
+            <p className="footer-text">
+              © {new Date().getFullYear()} All rights reserved.
+            </p>
           </Col>
         </Row>
       </Container>
