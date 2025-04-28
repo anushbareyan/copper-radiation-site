@@ -1,6 +1,15 @@
-# Getting Started with Create React App
+# Copper Radiation Effects — Research & Resources
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is the repository for the "Copper Radiation Effects" research website. The site showcases research and tools on the effects of space radiation on copper interconnects.
+
+## About
+
+This website serves as a platform to share:
+- Research papers on copper radiation effects
+- Python simulation programs for radiation-induced resistance changes
+- Professional connections and resources
+
+The site features a modern, responsive design with an interactive space-themed background.
 
 ## Available Scripts
 

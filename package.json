@@ -2,21 +2,32 @@
   "name": "copper-radiation-site",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://anushbareyan.github.io/copper-radiation-site",
   "dependencies": {
+    "@fortawesome/free-brands-svg-icons": "^6.7.2",
+    "@fortawesome/free-solid-svg-icons": "^6.7.2",
+    "@fortawesome/react-fontawesome": "^0.2.2",
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^13.5.0",
+    "bootstrap": "^5.3.5",
+    "gh-pages": "^6.3.0",
     "react": "^19.1.0",
+    "react-bootstrap": "^2.10.9",
     "react-dom": "^19.1.0",
     "react-scripts": "5.0.1",
+    "react-tsparticles": "^2.12.2",
+    "tsparticles-slim": "^2.12.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [

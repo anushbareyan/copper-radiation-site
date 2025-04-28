@@ -1,0 +1,12 @@
+.resources-container {
+  padding: 50px 0;
+  position: relative;
+  z-index: 10;
+  flex-grow: 1;
+}
+
+@media (max-width: 768px) {
+  .resources-container {
+    padding: 30px 0;
+  }
+}
