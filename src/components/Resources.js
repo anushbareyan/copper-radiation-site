@@ -1,28 +1,29 @@
-import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
-import ResourceCard from './ResourceCard';
-import './Resources.css';
+import React from "react";
+import { Container, Row, Col } from "react-bootstrap";
+import ResourceCard from "./ResourceCard";
+import "./Resources.css";
 
 const Resources = () => {
   const resources = [
     {
-      title: 'Research Paper',
-      description: 'Full research paper and supplementary materials.',
-      link: 'https://drive.google.com/drive/folders/your-folder-id',
-      type: 'paper'
+      title: "Research Paper",
+      description: "Full research paper and supplementary materials.",
+      link: "https://drive.google.com/drive/folders/1mmAdhJ39TwlE5-o3rb3ercLEiaX7swyg",
+      type: "paper",
     },
     {
-      title: 'Python Program',
-      description: 'Simulation program to model radiation induced resistance change.',
-      link: 'https://github.com/yourusername/your-repo',
-      type: 'code'
+      title: "Python Program",
+      description:
+        "Simulation program to model radiation induced resistance change.",
+      link: "https://github.com/anushbareyan/space-radiation-effects#",
+      type: "code",
     },
     {
-      title: 'LinkedIn Profile',
-      description: 'Connect with me on LinkedIn for professional updates.',
-      link: 'https://linkedin.com/in/your-linkedin',
-      type: 'linkedin'
-    }
+      title: "LinkedIn Profile",
+      description: "Connect with me on LinkedIn for professional updates.",
+      link: "https://www.linkedin.com/in/anush-bareyan/",
+      type: "linkedin",
+    },
   ];
 
   return (
