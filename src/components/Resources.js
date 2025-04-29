@@ -20,7 +20,7 @@ const Resources = () => {
     },
     {
       title: "LinkedIn Profile",
-      description: "Connect with me on LinkedIn for professional updates.",
+      description: "My LinkedIn",
       link: "https://www.linkedin.com/in/anush-bareyan/",
       type: "linkedin",
     },
