@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/copper-radiation-site/static/css/main.3b462a0e.css",
-    "main.js": "/copper-radiation-site/static/js/main.378e259f.js",
+    "main.js": "/copper-radiation-site/static/js/main.8338b860.js",
     "static/js/453.41fdf7a5.chunk.js": "/copper-radiation-site/static/js/453.41fdf7a5.chunk.js",
     "static/media/sat.jpg": "/copper-radiation-site/static/media/sat.9b1c312315c4bd893583.jpg",
     "index.html": "/copper-radiation-site/index.html",
     "main.3b462a0e.css.map": "/copper-radiation-site/static/css/main.3b462a0e.css.map",
-    "main.378e259f.js.map": "/copper-radiation-site/static/js/main.378e259f.js.map",
+    "main.8338b860.js.map": "/copper-radiation-site/static/js/main.8338b860.js.map",
     "453.41fdf7a5.chunk.js.map": "/copper-radiation-site/static/js/453.41fdf7a5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3b462a0e.css",
-    "static/js/main.378e259f.js"
+    "static/js/main.8338b860.js"
   ]
 }
