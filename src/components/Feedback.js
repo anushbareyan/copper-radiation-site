@@ -1,37 +1,37 @@
-import React, { useState } from 'react';
-import { Container, Form, Button, Alert } from 'react-bootstrap';
-import './Feedback.css';
+import React, { useState } from "react";
+import { Container, Form, Button, Alert } from "react-bootstrap";
+import "./Feedback.css";
 
 const Feedback = () => {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
   const [submitted, setSubmitted] = useState(false);
-  const [error, setError] = useState('');
+  const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
-    setError('');
+    setError("");
 
     // Form validation
     if (!name.trim() || !email.trim() || !message.trim()) {
-      setError('Please fill in all fields');
+      setError("Please fill in all fields");
       setLoading(false);
       return;
     }
 
     try {
       // Use the environment variable if available, otherwise fall back to the default value
-      const formspreeId = process.env.REACT_APP_FORMSPREE_ID || 'your-formspree-id';
-      const formspreeUrl = `https://formspree.io/f/${formspreeId}`;
-      
+      const formspreeId = process.env.REACT_APP_FORMSPREE_ID || "xeogagzv";
+      const formspreeUrl = `https://formspree.io/f/xeogagzv`;
+
       // Submit to FormSpree service (a free service to collect form submissions)
       const response = await fetch(formspreeUrl, {
-        method: 'POST',
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify({
           name,
@@ -43,15 +43,15 @@ const Feedback = () => {
 
       if (response.ok) {
         setSubmitted(true);
-        setName('');
-        setEmail('');
-        setMessage('');
+        setName("");
+        setEmail("");
+        setMessage("");
       } else {
-        throw new Error('Failed to submit feedback');
+        throw new Error("Failed to submit feedback");
       }
     } catch (err) {
-      setError('Failed to submit your feedback. Please try again later.');
-      console.error('Feedback submission error:', err);
+      setError("Failed to submit your feedback. Please try again later.");
+      console.error("Feedback submission error:", err);
     } finally {
       setLoading(false);
     }
@@ -60,57 +60,63 @@ const Feedback = () => {
   return (
     <Container className="feedback-container">
       <h2 className="feedback-title">Share Your Opinion</h2>
-      <p className="feedback-subtitle">We value your thoughts on space radiation effects on copper interconnects</p>
-      
+      <p className="feedback-subtitle">
+        Since I will continue working on this research to eventually (hopefully)
+        publish a scientific paper, I need feedback of what I can include in the
+        research, or what I can do to make it better. Any comment or feedback
+        will help me a lot.
+      </p>
+
       {submitted ? (
         <Alert variant="success">
-          Thank you for your feedback! Your opinion has been submitted successfully.
+          Thank you for your feedback! Your opinion has been submitted
+          successfully.
         </Alert>
       ) : (
         <Form onSubmit={handleSubmit} className="feedback-form">
           {error && <Alert variant="danger">{error}</Alert>}
-          
+
           <Form.Group className="mb-3">
             <Form.Label>Name</Form.Label>
-            <Form.Control 
-              type="text" 
+            <Form.Control
+              type="text"
               placeholder="Your name"
               value={name}
               onChange={(e) => setName(e.target.value)}
               required
             />
           </Form.Group>
-          
+
           <Form.Group className="mb-3">
             <Form.Label>Email</Form.Label>
-            <Form.Control 
-              type="email" 
+            <Form.Control
+              type="email"
               placeholder="Your email address"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
             />
           </Form.Group>
-          
+
           <Form.Group className="mb-4">
             <Form.Label>Your Opinion</Form.Label>
-            <Form.Control 
-              as="textarea" 
+            <Form.Control
+              as="textarea"
               rows={5}
-              placeholder="Share your thoughts on our research..."
+              placeholder="Share your thoughts on the research..."
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               required
             />
           </Form.Group>
-          
-          <Button 
-            variant="primary" 
-            type="submit" 
+
+          <Button
+            variant="primary"
+            type="submit"
             className="submit-btn"
             disabled={loading}
           >
-            {loading ? 'Submitting...' : 'Submit Feedback'}
+            {loading ? "Submitting..." : "Submit Feedback"}
           </Button>
         </Form>
       )}
