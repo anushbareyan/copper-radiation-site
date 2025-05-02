@@ -14,10 +14,11 @@ const Feedback = () => {
     e.preventDefault();
     setLoading(true);
     setError("");
-
-    // Form validation
-    if (!name.trim() || !email.trim() || !message.trim()) {
-      setError("Please fill in all fields");
+    const finalName = name.trim() || "Anonymous";
+    const finalEmail = email.trim() || "anonymous@example.com";
+    // Form validation !name.trim() || !email.trim() ||
+    if (!message.trim()) {
+      setError("Please fill in you optinion");
       setLoading(false);
       return;
     }
@@ -34,8 +35,8 @@ const Feedback = () => {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          name,
-          email,
+          finalName,
+          finalEmail,
           message,
           timestamp: new Date().toISOString(),
         }),
