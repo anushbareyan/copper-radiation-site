@@ -62,10 +62,7 @@ const Feedback = () => {
     <Container className="feedback-container">
       <h2 className="feedback-title">Share Your Opinion</h2>
       <p className="feedback-subtitle">
-        Since I will continue working on this research to eventually (hopefully)
-        publish a scientific paper, I need feedback of what I can include in the
-        research, or what I can do to make it better. Any comment or feedback
-        will help me a lot.
+        Here you can write your feedback.
       </p>
 
       {submitted ? (
