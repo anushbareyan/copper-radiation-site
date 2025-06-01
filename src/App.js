@@ -12,7 +12,7 @@ function App() {
       <SpaceBackground />
       <Hero />
       <Resources />
-      <Feedback />
+      {/* <Feedback /> */}
       <Footer />
     </div>
   );
