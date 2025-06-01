@@ -9,11 +9,14 @@ const Hero = () => {
       <Row className="justify-content-center align-items-center text-center">
         <Col md={8} className="hero-content">
           {/* <Avatar /> */}
-          {/* <h1 className="hero-name">Anush Bareyan</h1> */}
-          <p className="hero-description">
+          <h1 className="hero-name">
+            Modeling Space Radiation Effects on Copper Interconnects: Research &
+            Tools
+          </h1>
+          {/* <p className="hero-description">
             Research and tools on the effects of space radiation on copper
             interconnects.
-          </p>
+          </p> */}
         </Col>
       </Row>
     </Container>

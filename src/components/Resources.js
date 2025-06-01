@@ -18,12 +18,12 @@ const Resources = () => {
       link: "https://github.com/anushbareyan/space-radiation-effects#",
       type: "code",
     },
-    {
-      title: "LinkedIn Profile",
-      description: "My LinkedIn",
-      link: "https://www.linkedin.com/in/anush-bareyan/",
-      type: "linkedin",
-    },
+    // {
+    //   title: "LinkedIn Profile",
+    //   description: "My LinkedIn",
+    //   link: "https://www.linkedin.com/in/anush-bareyan/",
+    //   type: "linkedin",
+    // },
   ];
 
   return (
