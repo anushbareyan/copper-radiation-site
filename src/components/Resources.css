@@ -10,3 +10,7 @@
     padding: 30px 0;
   }
 }
+
+.resources-container .row {
+  justify-content: center; /* Center the cards inside the row */
+}
